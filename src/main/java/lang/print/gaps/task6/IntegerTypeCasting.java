@@ -2,8 +2,9 @@ package lang.print.gaps.task6;
 
 public class IntegerTypeCasting {
     public static void main(String[] args) {
-        int first = 100;
-        int second = first;
+        Long first = 100l;
+
+        int second = Math.toIntExact(first);
         System.out.println(first);
         System.out.println(second);
 
